@@ -21,7 +21,8 @@ Adaptación de un proyecto realizado por [Daniel van Flymen](https://github.com/
 
 a) Importa el proyecto desde el IDE Intellij Idea (Recomendada)
 
-b) Desde la línea de comandos navega hacia la raíz del proyecto y ejecuta:
+b) Teniendo instalado [gradle](https://gradle.org/), navega desde la línea de comandos hacia la raíz del proyecto y ejecuta:
+
 ```
 $ gradlew bootRun
 ```
