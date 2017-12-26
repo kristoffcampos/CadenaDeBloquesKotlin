@@ -151,7 +151,7 @@ class CadenaDeBloques(
             println("$bloque")
             println("\n-----------------------\n")
 
-            if (bloque.hash_previo != hashear_bloque(ultimo_bloque)) return false
+            if (bloque.hash_previo != hashear_bloque(ultimo_bloque) && !prueba_valida(ultimo_bloque.prueba, bloque.prueba)) return false
 
             ultimo_bloque = bloque
             index_actual++

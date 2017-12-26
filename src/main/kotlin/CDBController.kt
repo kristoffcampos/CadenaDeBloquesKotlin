@@ -86,7 +86,7 @@ public class CDBController {
     @RequestMapping(value="/nodos/resolver", method = arrayOf(RequestMethod.GET))
     private fun consenso(): String{
         val reemplazada = cadena_de_bloques.resolver_conflictos(cadena_de_bloques.nodos)
-        var msj : String
+        val msj : String
 
         if(reemplazada) {
             msj = "Nuestra cadena fue reemplazada por la de la red ${cadena_de_bloques.cadena}"
